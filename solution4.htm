@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lets Upgrade</title>
+</head>
+<body>
+
+ <p>Lets Upgrade </p>
+ <p>4.Program to display only elements containing 'a' in the array</p>
+ <button onclick="myFunction()">Try NOW</button>
+
+<p id="main"></p>
+<script>
+let array = ['876','ab2','mohan','muni','23456a'];
+function myFunction(){
+    array = array.find(a => a.includes('a'));
+    document.getElementById('answer4').innerHTML = array;
+}
+</script>
+    
+</body>
+</html>

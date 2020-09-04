@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lets Upgrade</title>
+</head>
+<body>
+
+ <p>Lets Upgrade </p>
+ <p>3.Program to search for a element in array of strings?</p>
+ <button onclick="myFunction()">Try NOW</button>
+
+<p id="main"></p>
+<script>
+
+let strings = ['man','women','uncle','aunty','sister','brother'];
+function myFunction3(id){
+    let search1 = id.value;
+    let lc = search1.toLowerCase();
+    let index1 = strings.indexOf(`${lc}`);
+    if(index1 < 0) 
+        document.getElementById('main').innerHTML = "Sorry no one found"
+    else 
+        document.getElementById('main').innerHTML = `You clicked the ${search1} is at ${index1}th index`;   
+}
+</script>
+    
+</body>
+</html>
